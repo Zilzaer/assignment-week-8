@@ -1,3 +1,3 @@
 .posts {
-    @apply flex flex-col gap-4 bg-neutral-700 ;
+    @apply flex flex-col active:flex-col-reverse gap-4 bg-neutral-700 ;
 }

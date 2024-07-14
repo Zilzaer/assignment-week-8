@@ -15,7 +15,7 @@ export default async function Home() {
 
   return (
     <main className={`${styles.posts}`}>
-      <button>Sort</button>
+      <button className="peer">Sort</button>
       {posts && posts.length > 0 && posts.map((post) => (
         <Post key={post.id} id={post.id} title={post.title} author={post.author} content={post.content} timestamp={post.timestamp} />
       ))}
