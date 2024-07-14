@@ -1,0 +1,4 @@
+.post {
+    @apply flex flex-col gap-4 bg-slate-800;
+    @apply text-slate-200;
+}

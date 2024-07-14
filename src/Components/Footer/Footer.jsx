@@ -1,16 +1,16 @@
 import Link from 'next/link'
+import Image from 'next/image';
 
 import styles from './styles.module.css'
 
 const Footer = () => {
     return (
-      <footer className={``}>
-        <div className='title'>Placeholder Text For website title</div>
+      <footer className={`${styles.footer}`}>
         <nav>
-          <ul>
-            <button><li><Link href="/githublink">Placeholder replace with github logo</Link></li></button>
-            <button><li><Link href="/linkedinlink">Placeholder replace with linkedin Logo</Link></li></button>
-            <button><li><Link href="/thirdlink">placeholder replace with third logo</Link></li></button>
+          <ul className={`${styles.ul}`}>
+            <h1>Joshua Day - Week 08 Assignment - Student Demo</h1>
+            <a href="https://github.com/Zilzaer">Github</a>
+            <a href="https://www.linkedin.com/in/joshua-day-ba1652311/">LinkedIn</a>
           </ul>
         </nav>
       </footer>
