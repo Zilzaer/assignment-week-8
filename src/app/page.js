@@ -14,11 +14,13 @@ export default async function Home() {
   const posts = (await get_posts()).data;
 
   return (
-    <main className={`${styles.posts}`}>
-      <button className="peer">Sort</button>
-      {posts && posts.length > 0 && posts.map((post) => (
-        <Post key={post.id} id={post.id} title={post.title} author={post.author} content={post.content} timestamp={post.timestamp} />
-      ))}
+    <main className="group">
+      <button>Sort</button>
+      <div id="posts" className={`${styles.posts}`}>
+        {posts && posts.length > 0 && posts.map((post) => (
+          <Post key={post.id} id={post.id} title={post.title} author={post.author} content={post.content} timestamp={post.timestamp} />
+        ))}
+      </div>
     </main>
   );
 }
